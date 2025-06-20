@@ -1,13 +1,13 @@
-$bg-color: #25365a;
-$text-color: white;
+@use "../foundation/function.scss" as *;
 
 .l-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background-color: $bg-color;
-  color: $text-color;
-  padding: 10px 20px;
+  background-color: get-color(sub);
+  color: get-color(wt);
+  width: 256px;
+  height: 800px;
 
   &__left {
     display: flex;
